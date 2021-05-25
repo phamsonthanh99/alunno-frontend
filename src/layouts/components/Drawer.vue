@@ -8,6 +8,7 @@
         mobile-breakpoint="960"
         app
         mini-variant-width="80"
+        :permanent="true"
         width="260"
         v-bind="$attrs"
     >
@@ -23,7 +24,7 @@
                     <!--                    <span class="logo-mini">-->
                     <!--            <img src="../../assets/images/logo.png" class="mr-2" width="40"  alt="" />-->
                     <!--                    </span>-->
-                    <span class="logo-normal">TTLab</span>
+                    <span class="logo-normal">TT</span>
                     <span class="logo-mini ml-0 mr-0">TT</span>
                 </v-list-item-title>
             </v-list-item-content>
@@ -65,6 +66,11 @@ export default {
                 icon: 'mdi-account-multiple',
                 title: 'layout.sidebar.user',
                 to: '/user/list',
+            },
+            {
+                icon: 'mdi-account-circle',
+                title: 'layout.sidebar.student',
+                to: '/student',
             },
         ],
     }),

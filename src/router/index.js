@@ -7,6 +7,7 @@ import TokenService from '../helpers/token';
 import commonRouters from '../modules/common/router/common.router';
 import authRouters from '../modules/auth/router/auth.router';
 import userRouters from '../modules/user/router/user.router';
+import studentRouters from '../modules/student/router/user.router';
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,7 @@ const routes = [
     commonRouters,
     ...authRouters,
     userRouters,
+    studentRouters,
 ];
 
 const router = new VueRouter({

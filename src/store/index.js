@@ -4,6 +4,7 @@ import TokenService from '@/helpers/token';
 import common from '../modules/common/store/common';
 import auth from '../modules/auth/store/auth';
 import user from '../modules/user/store/user';
+import student from '../modules/student/store/student';
 
 Vue.use(Vuex);
 
@@ -48,6 +49,7 @@ export default new Vuex.Store({
         auth,
         common,
         user,
+        student,
     },
     state: rootState,
     mutations: rootMutations,

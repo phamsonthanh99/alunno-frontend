@@ -2,6 +2,6 @@ export default {
     login: 'Login',
     username: 'Username',
     password: 'Password',
-    title: 'TTLab',
+    title: 'Student Management',
     error: 'Invalid username or password',
 };

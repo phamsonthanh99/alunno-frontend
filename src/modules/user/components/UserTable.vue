@@ -1,24 +1,18 @@
 <template>
-   <div> User Table </div>
+    <div>
+        <div>{{ message }}</div>
+    </div>
 </template>
 
 <script>
-
 export default {
     name: 'UserTable',
-    components: {
-    },
-    props: {
-
-    },
     data() {
         return {
-
+            message: 'user table',
         };
     },
-
 };
 </script>
-<style lang="scss" scoped>
 
-</style>
+<style></style>

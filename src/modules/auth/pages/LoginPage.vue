@@ -1,9 +1,5 @@
 <template>
-    <v-container
-        id="login"
-        class="fill-height justify-center"
-        tag="section"
-    >
+    <v-container id="login" class="fill-height justify-center" tag="section">
         <v-row justify="center">
             <v-slide-y-transition appear>
                 <common-material-card
@@ -26,12 +22,9 @@
                         dark
                         class="mb-0 mt-2"
                     >
-                        <span
-                            class="text-uppercase"
-                            v-text="$t(errorMessage)"
-                        />
+                        <span class="text-uppercase" v-text="$t(errorMessage)" />
                     </common-material-alert>
-                    <validation-observer v-slot="{handleSubmit}">
+                    <validation-observer v-slot="{ handleSubmit }">
                         <v-card-text class="text-center">
                             <validation-provider
                                 v-slot="{ errors }"
@@ -43,7 +36,8 @@
                                     color="secondary"
                                     :autofocus="true"
                                     :label="$t('auth.login.username')"
-                                    prepend-icon="mdi-face"
+                                    :placeholder="$t('auth.login.username')"
+                                    prepend-icon="mdi-account"
                                     class="mt-2"
                                     :error-messages="errors"
                                     @keyup.enter="login"
@@ -66,6 +60,7 @@
                                     class="mb-2"
                                     color="secondary"
                                     :label="$t('auth.login.password')"
+                                    :placeholder="$t('auth.login.password')"
                                     prepend-icon="mdi-lock-outline"
                                     :error-messages="errors"
                                     outlined
@@ -78,7 +73,7 @@
                                 />
                             </validation-provider>
                             <v-btn
-                                color=""
+                                color="primary"
                                 class="v-btn--text success--text"
                                 @click.prevent="handleSubmit(login)"
                             >
@@ -119,3 +114,10 @@ export default {
     },
 };
 </script>
+<style lang="scss" scoped>
+::v-deep .v-btn--text {
+    .v-btn__content {
+        color: #fff;
+    }
+}
+</style>

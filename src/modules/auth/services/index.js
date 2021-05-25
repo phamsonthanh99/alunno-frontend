@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 const login = async (username, password) => {
-    if (username === 'admin' && password === 'tt@1234') {
+    if (username === 'admin' && password === 'admin') {
         return {
             username: 'admin',
             token: 'token1234567',

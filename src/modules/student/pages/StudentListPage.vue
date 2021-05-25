@@ -1,15 +1,15 @@
 <template>
     <div>
-        <UserTable />
+        <StudentTable />
     </div>
 </template>
 
 <script>
-import UserTable from '../components/UserTable.vue';
+import StudentTable from '../components/StudentTable.vue';
 
 export default {
     components: {
-        UserTable,
+        StudentTable,
     },
 };
 </script>

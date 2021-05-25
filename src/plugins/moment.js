@@ -1,6 +1,7 @@
 import moment from 'moment';
-import TokenService from '@/helpers/token';
+// import TokenService from '@/helpers/token';
 
-const lang = TokenService.getLang() || 'ja';
+// const lang = TokenService.getLang() || 'ja';
 
-moment.locale(lang);
+// moment.locale(lang);
+moment.locale('en');

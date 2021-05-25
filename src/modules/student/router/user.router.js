@@ -5,14 +5,14 @@ export default {
     component: MainLayout,
     children: [
         {
-            path: '/user/list',
-            name: 'UserListPage',
-            component: () => import('../pages/UserListPage.vue'),
+            path: '/student',
+            name: 'StudentListPage',
+            component: () => import('../pages/StudentListPage.vue'),
             meta: {
                 requiresAuth: true,
                 breadcrumb: [
                     {
-                        title: 'user.userList.breadcrumb.title',
+                        title: 'student.breadcrumb.title',
                     },
                 ],
             },

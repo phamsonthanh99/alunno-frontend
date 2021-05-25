@@ -1,6 +1,6 @@
 <template>
     <v-app-bar id="app-bar" absolute app color="transparent" flat height="64">
-        <v-btn v-if="isLogin" class="mr-3" elevation="1" fab small @click="toggleSidebar">
+        <!-- <v-btn v-if="isLogin" class="mr-3" elevation="1" fab small @click="toggleSidebar">
             <v-icon v-if="value">
                 mdi-view-quilt
             </v-icon>
@@ -13,7 +13,7 @@
         <common-breadcrumb
             class="hidden-sm-and-down font-weight-light"
             :breadcrumb="_.get($route, 'meta.breadcrumb', [])"
-        />
+        /> -->
 
         <v-spacer />
 
